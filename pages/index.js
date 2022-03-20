@@ -38,7 +38,6 @@ export async function getServerSideProps() {
         id: meetup._id.toString(),
       })),
     },
-    revalidate: 1,
   };
 }
 
