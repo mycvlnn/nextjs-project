@@ -27,7 +27,6 @@ export async function getStaticProps(context) {
   const { meetupsCollection, client } = await connectDatabase();
 
   const meetup = await meetupsCollection.findOne({ _id: ObjectId(meetupId) });
-  console.log("meetup", meetup);
 
   client.close();
 

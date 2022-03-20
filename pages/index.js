@@ -20,7 +20,7 @@ const HomePage = (props) => {
 };
 
 // //Accept async.
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const { meetupsCollection, client } = await connectDatabase();
 
   //Tìm ra tất cả dữ liệu
