@@ -17,7 +17,7 @@ export async function getStaticPaths() {
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),
-    fallback: false, //false => nếu gõ bừa id trên thanh URL => trả về 404.
+    fallback: "blocking",
   };
 }
 
